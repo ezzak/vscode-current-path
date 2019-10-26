@@ -1,0 +1,72 @@
+{
+  "name": "current-path",
+  "displayName": "Current Path",
+  "description": "View the path of the current file in the status bar.",
+  "version": "0.0.1",
+  "publisher": "ezzak",
+  "engines": {
+    "vscode": "^1.34.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "configuration": {
+      "title": "Current Path",
+      "properties": {
+        "currentPath.useAbsolutePath": {
+          "type": "boolean",
+          "default": false,
+          "description": "Use absolute file paths."
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "currentPath.absolutePath",
+        "title": "Current Path: Copy file absolute path."
+      },
+      {
+        "command": "currentPath.relativePath",
+        "title": "Current Path: Copy file path relative to the working directory."
+      },
+      {
+        "command": "currentPath.togglePathType",
+        "title": "Current Path: Toggle shown path between absolute and relative."
+      },
+      {
+        "command": "currentPath.fileName",
+        "title": "Current Path: Copy file name."
+      }
+    ]
+  },
+  "main": "./out/extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^10.12.21",
+    "@types/vscode": "^1.34.0",
+    "glob": "^7.1.4",
+    "mocha": "^6.1.4",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.1",
+    "vscode-test": "^1.2.0"
+  },
+  "dependencies": {
+    "clipboardy": "^2.1.0",
+    "path": "^0.12.7"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
