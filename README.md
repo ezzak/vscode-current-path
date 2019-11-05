@@ -11,12 +11,12 @@ Atom style current file absolute/relative path in your Status Bar.
 ![feature X](images/Filename.png)
 
 ## Commands
- 
-* Copy file absolute path
-* Copy file path relative to the working directory
-* Toggle shown path between absolute and relative
-* Copy file name
+
+- `currentPath.absolutePath` - Copy file absolute path
+- `currentPath.relativePath` - Copy file path relative to the working directory
+- `currentPath.togglePathType` - Toggle shown path between absolute and relative
+- `currentPath.fileName` - Copy file name
 
 ## Settings
 
-* `currentPath.useAbsolutePath`: Toggle shown path between absolute and relative.
+- `currentPath.useAbsolutePath`: Toggle shown path between absolute and relative.
