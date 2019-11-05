@@ -2,7 +2,7 @@
   "name": "current-path",
   "displayName": "Current Path",
   "description": "View the path of the current file in the status bar.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "ezzak",
   "repository": {
     "type": "git",
