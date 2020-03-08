@@ -1,6 +1,6 @@
 # Change Log
 
-## [0.1.2]
+## [0.1.0]
 
 - Added ability to hide file icon
 - Moved file icon to the right of file path
