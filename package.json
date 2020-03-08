@@ -25,6 +25,11 @@
           "type": "boolean",
           "default": false,
           "description": "Use absolute file paths."
+        },
+        "currentPath.hideFileIcon": {
+          "type": "boolean",
+          "default": false,
+          "description": "Hide the file icon."
         }
       }
     },
@@ -40,6 +45,10 @@
       {
         "command": "currentPath.togglePathType",
         "title": "Current Path: Toggle shown path between absolute and relative."
+      },
+      {
+        "command": "currentPath.toggleFileIcon",
+        "title": "Current Path: Toggle visibility of file icon in the status bar."
       },
       {
         "command": "currentPath.fileName",
@@ -74,6 +83,10 @@
     "path",
     "copy"
   ],
+  "galleryBanner": {
+    "color": "#0B162D",
+    "theme": "dark"
+  },
   "icon": "images/icon.png",
   "license": "SEE LICENSE IN LICENSE.txt"
 }

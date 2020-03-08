@@ -16,7 +16,9 @@ Atom style current file absolute/relative path in your Status Bar.
 - `currentPath.relativePath` - Copy file path relative to the working directory
 - `currentPath.togglePathType` - Toggle shown path between absolute and relative
 - `currentPath.fileName` - Copy file name
+- `currentPath.toggleFileIcon` - Toggle visibility of file icon
 
 ## Settings
 
 - `currentPath.useAbsolutePath`: Toggle shown path between absolute and relative.
+- `currentPath.hideFileIcon`: Toggle visibility of file icon.
